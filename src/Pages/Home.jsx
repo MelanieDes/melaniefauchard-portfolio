@@ -3,6 +3,8 @@ import React from 'react';
 import Navigation from '../Components/Navigation/Navigation';
 import SocialNetWork from '../Components/SocialNetWork/SocialNetWork';
 import DynamicText from '../Components/DynamicText';
+import Button from '../Components/Button';
+
 
 const Home = () => {  
     // const [count, setCount] = useState(0)
@@ -19,15 +21,13 @@ const Home = () => {
                     <h2><DynamicText /></h2>                
                 </div> 
             </div>
-            </div>
+            <Button right={"/projet-1"} />
             {/* <div className="card">
                 <button onClick={() => setCount((count) => count + 1)}>
                 count is {count}
                 </button>        
-            </div> */}
-            
-            
-                  
+            </div> */}                  
+            </div>
         </div>
     );
 };
