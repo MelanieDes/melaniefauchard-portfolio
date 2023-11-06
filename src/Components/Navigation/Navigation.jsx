@@ -32,7 +32,7 @@ const Navigation = () => {
                     </ul>
                 </li>
                 
-                <NavLink to="#contact" className={(nav) => (nav.isActive ? "nav-active hover" : "hover" )}>
+                <NavLink to="/contact" className={(nav) => (nav.isActive ? "nav-active hover" : "hover" )}>
                     <li>Contact</li>
                 </NavLink>  
             </ul>

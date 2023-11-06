@@ -1,16 +1,16 @@
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 
 const Mouse = () => {
 
     useEffect(() => {
-        const cursor = document.querySelector<HTMLElement>(".cursor");
+        const cursor = document.querySelector(".cursor");
 
         window.addEventListener('mousemove', (e) => {
             cursor.style.top = e.y + "px";
-            cursor.style.top = e.x + "px";
+            cursor.style.left = e.x + "px";
         });
 
-        document.querySelectorAll<HTMLElement>('.hover').forEach((link) => {
+        document.querySelectorAll('.hover').forEach((link) => {
             link.addEventListener('mouseover', () => {
                 cursor.classList.add('hovered');
             });

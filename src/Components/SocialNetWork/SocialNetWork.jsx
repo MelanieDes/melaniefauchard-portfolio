@@ -2,11 +2,15 @@
 const SocialNetWork = () => {
 
     const anim = () => {
-        const icons = document.querySelectorAll<HTMLAnchorElement>(".social-network a");
+        const icons = document.querySelectorAll(".social-network a");
       
         icons.forEach((link) => {
           link.addEventListener("mouseover", (e) => {
             link.style.transform = `translate(${e.offsetX - 20}px, ${e.offsetY - 13}px)`;
+          });
+
+          link.addEventListener("mouseleave", () => {
+            link.style.transform = "";
           });
         });
       };
