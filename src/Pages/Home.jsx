@@ -1,11 +1,11 @@
 // import { useState } from 'react'
 import React from 'react';
-import Navigation from '../Components/Navigation/Navigation';
-import SocialNetWork from '../Components/SocialNetWork/SocialNetWork';
+import Navigation from '../Components/Navigation';
+import SocialNetWork from '../Components/SocialNetWork';
 import DynamicText from '../Components/DynamicText';
 import Button from '../Components/Button';
 import { motion } from 'framer-motion'
-import Mouse from '../Components/Mouse/Mouse';
+import Mouse from '../Components/Mouse';
 
 const Home = () => {  
     // const [count, setCount] = useState(0)
