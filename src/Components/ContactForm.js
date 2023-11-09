@@ -1,49 +1,25 @@
-import React, { useRef } from "react";
-import emailjs from "@emailjs/browser";
-import { init } from "@emailjs/browser";
-init(process.env.ID);
+import React  from "react";
 
 const ContactForm = () => {
-  const form = useRef();
+    const handleSubmit = (e) => {
+      e.preventDefault();
 
-  const sendEmail = (e) => {
-    e.preventDefault();
-    const formMess = document.querySelector(".formMessage");
+      const form = e.target;
 
-    emailjs
-      .sendForm(
-        "service_zessxeu",
-        "template_5z425aa",
-        form.current,
-        process.env.REACT_APP_ID
-      )
-      .then(
-        (res) => {
-          console.log(res.text);
-          form.current.reset();
-          formMess.innerHTML = "<p className='success'>Message envoyé !</p>";
+      const formData = new FormData(form);
+      const name = formData.get("username");
+      const email = formData.get("email");
 
-          setTimeout(() => {
-            formMess.innerHTML = "";
-          }, 2000);
-        },
-        (err) => {
-          console.log(err.text);
-          formMess.innerHTML =
-            "<p className='error'>Une erreur s'est produite, veuillez réessayer</p>";
+      form.reste();
 
-          setTimeout(() => {
-            formMess.innerHTML = "";
-          }, 2000);
-        }
-      );
-  };
+      alert(`Ùsername: ${name} Email: ${email}`)
+    }
 
   return (
     <div className="form-container">
-      <h2>Contactez-nous</h2>
-      <form ref={form} onSubmit={sendEmail} className="form-content">
-        <label>Nom</label>
+      <h2>contactez-nous</h2>
+      <form onSubmit={handleSubmit} className="form-content">
+        <label>nom</label>
         <input type="text" name="name" required autoComplete="off" id="name" />
         <label>Email</label>
         <input

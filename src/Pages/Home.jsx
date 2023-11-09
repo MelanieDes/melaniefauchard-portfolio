@@ -35,7 +35,7 @@ const Home = () => {
             <SocialNetWork />  
             <div className="home-main">
                 <div className='main-content'>
-                    <motion.h1 drag onDragEnd dragConstraints={{ left: -250, right: 950, top: -200, bottom: 250}} >Mélanie</motion.h1>
+                    <h1>Mélanie</h1>
                     <h2><DynamicText /></h2>                
                 </div> 
             </div>

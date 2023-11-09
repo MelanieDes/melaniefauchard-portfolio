@@ -4,7 +4,7 @@ import React, { createElement, useEffect } from 'react';
 const DynamicText = () => {
     useEffect(() => {
         const target = document.getElementById("text-target");
-        let array = ["simple", "smart", "strong"];
+        let array = ["developpeuse", "front-end", "web"];
         let wordIndex = 0;
         let letterIndex = 0;
 
@@ -14,7 +14,7 @@ const DynamicText = () => {
 
             letter.classList.add("letter");
             letter.style.opacity = "0";
-            letter.style.animation = "anim 5s ease forwards";
+            letter.style.animation = "anim 6s ease forwards";
             letter.textContent = array[wordIndex][letterIndex];
 
             setTimeout(() => {
