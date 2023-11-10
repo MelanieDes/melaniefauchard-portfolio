@@ -6,6 +6,7 @@ import DynamicText from '../Components/DynamicText';
 import Button from '../Components/Button';
 import { motion } from 'framer-motion'
 import Mouse from '../Components/Mouse';
+import Card from '../Components/Card';
 
 const Home = () => {  
     // const [count, setCount] = useState(0)
@@ -32,20 +33,23 @@ const Home = () => {
             <Mouse />
             <motion.div className="home" initial="initial" animate="visible" exit="exit" variants={variants}>
             <Navigation />   
-            <SocialNetWork />  
+            <SocialNetWork />             
             <div className="home-main">
                 <div className='main-content'>
                     <h1>Mélanie</h1>
                     <h2><DynamicText /></h2>                
-                </div> 
-            </div>
-            <Button right={"/projet-1"} />
+                </div>                 
+            </div> 
+            <Card />                      
+            <Button right={"/About"} />
             {/* <div className="card">
                 <button onClick={() => setCount((count) => count + 1)}>
                 count is {count}
                 </button>        
-            </div> */}                  
+            </div> */}                              
             </motion.div>
+             
+                     
         </div>
     );
 };

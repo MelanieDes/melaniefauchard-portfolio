@@ -6,21 +6,34 @@ const ContactForm = () => {
 
   const sendEmail = (e) => { 
       e.preventDefault(); 
+
+    const formMess = document.querySelector('.formMessage')
+
       emailjs.sendForm( 
           "service_zessxeu", 
           "template_5z425aa", 
-          form.current, 
+          form.current,
           "R_SxnM0xmY6APlfch" 
+          // process.env.REACT_APP_PUBLIC_KEY
       )
       .then(
           (result) => { 
-          alert('votre message a bien été envoyé !'); 
-          form.current.reset();
-          console.log(result.text); 
+            console.log(result.text);  
+            form.current.reset();
+            formMess.innerHTML = "<p class='succes'>Message envoyé !</p>";
+          
+            setTimeout(() => {
+              formMess.innerHTML = "";
+            }, 2500);
       }, 
 
           (error) => { 
               console.log(error.text); 
+              formMess.innerHTML = "<p class='error'>Une erreur s'est produite, veuillez réessayer</p>";
+
+              setTimeout(() => {
+                formMess.innerHTML = "";
+              }, 2500);
           } 
       ); 
   };

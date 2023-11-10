@@ -5,12 +5,12 @@
 
   &:after {
     content: '';
-    height: 800px;
-    width: 800px;
+    height: 500px;
+    width: 500px;
     background: $color-3;
     border-radius: 50%;
     position: absolute;
-    bottom: -480px;
+    bottom: -50px;
     right: 0px;
     z-index: -2;
     animation: homeAnim 26s infinite alternate;
@@ -39,6 +39,11 @@
     align-items: center;
     justify-items: center;
     height: 95%;
+    // margin: 3%;
+    
+    @media screen and (max-width: 650px){
+      margin: 0 10%;
+    }
 
     .main-content {
       user-select: none;

@@ -1,4 +1,4 @@
-import React, { createElement, useEffect } from 'react';
+import React, { useEffect } from 'react';
 
 
 const DynamicText = () => {
