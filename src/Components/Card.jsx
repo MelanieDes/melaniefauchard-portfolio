@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Card = () => {
     return(
-        <div>
+        <div className='card-container'>
             <h2 className='card-main-title'>Mes projets</h2>
             <div className='card-main'>            
                 {projects.map((projet) => {                    

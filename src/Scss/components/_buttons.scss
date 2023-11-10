@@ -17,8 +17,13 @@
   .left {
     left: 15px;
   }
-
   .right {
     right: -24px;
-  }
+  }  
+}
+.bottom {
+  display: flex;
+  justify-content: center;
+  font-size: 100px;
+  bottom: 0;  
 }

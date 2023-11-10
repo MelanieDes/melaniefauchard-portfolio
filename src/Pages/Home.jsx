@@ -37,18 +37,18 @@ const Home = () => {
             <div className="home-main">
                 <div className='main-content'>
                     <h1>Mélanie</h1>
-                    <h2><DynamicText /></h2>                
-                </div>                 
+                    <h2><DynamicText /></h2>                                   
+                </div> 
+                <Button bottom={"#projets"} />                
             </div> 
             <Card />                      
-            <Button right={"/About"} />
+            <Button right={"/About"} />            
             {/* <div className="card">
                 <button onClick={() => setCount((count) => count + 1)}>
                 count is {count}
                 </button>        
             </div> */}                              
-            </motion.div>
-             
+            </motion.div>        
                      
         </div>
     );

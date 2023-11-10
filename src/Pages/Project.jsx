@@ -48,7 +48,7 @@ const Project = () => {
 
     
     return (
-        <div className="project">
+        <div className="project" id="projets">
             <Navigation />
             <Logo />
             <motion.div className='project-main' initial="initial" animate="visible" exit="exit" variants={variants}>

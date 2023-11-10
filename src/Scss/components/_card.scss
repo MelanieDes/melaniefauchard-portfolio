@@ -1,3 +1,18 @@
+.card-container {
+    animation: cardAnim 5s alternate;
+
+    @keyframes cardAnim {
+            from {
+              margin-left: 100%;
+              width: 200%;
+            }
+          
+            to {
+              margin-left: 0%;
+              width: 100%;
+            }
+          }
+}
 .card-main-title {
     color: $color-3;
     font-weight: 700;
