@@ -1,11 +1,9 @@
-// import React from 'react';
 import React, { useState, useEffect } from 'react';
 import { Navigate, useParams } from 'react-router-dom';
 import projets from '../Data/projectsData.json';
 import { motion } from 'framer-motion';
 import Navigation from '../Components/Navigation';
 import Logo from '../Components/Logo';
-import Button from '../Components/Button';
 
 const Project = () => {
     const [left, setLeft] = useState();
@@ -77,8 +75,7 @@ const Project = () => {
                     </div>
                 </motion.div>
                 <span className="random-circle" style={{ left, top, transform: size }}></span>
-            </motion.div>
-            <Button left={""} right={""} />
+            </motion.div>            
         </div>
     );
 };

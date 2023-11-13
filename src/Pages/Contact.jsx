@@ -1,12 +1,9 @@
 import React from 'react';
-import Navigation from '../Components/Navigation';
-import Logo from '../Components/Logo';
 import ContactForm from '../Components/ContactForm';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
-import SocialNetWork from '../Components/SocialNetWork';
 import Button from '../Components/Button';
 import { motion } from 'framer-motion';
-import Mouse from '../Components/Mouse';
+
 
 
 const Contact = () => {
@@ -24,10 +21,9 @@ const Contact = () => {
 
     return (
         <main>
-            <Mouse />
+            
             <motion.div className="contact" initial="out" animate="in" exit="out" variants={pageTransition} transition={{ duration: 0.5 }}>
-                <Navigation />
-                <Logo />  
+                              
                 <ContactForm />                                                 
                 <div className="contact-infos">
                     <div className="address">
@@ -51,15 +47,15 @@ const Contact = () => {
                             <CopyToClipboard text="melaniefauchard0@gmail.com" className="hover">
                                 <p style={{ cursor: "pointer" }} className='clipboard' onClick={() => alert("Email copié !")} >melaniefauchard0@gmail.com</p>
                             </CopyToClipboard>
-                        </div>
-                    </div>
-                    <SocialNetWork />
+                        </div>                          
+                    </div>                                      
                     <div className="credits">
                         <p>Mélanie Fauchard - 2023</p>
                     </div>
-                </div>
-                <Button left={"/projet-4"} />
+                </div>                
+                <Button left={"/Projects"} />
             </motion.div>
+            
         </main>
     );
 };

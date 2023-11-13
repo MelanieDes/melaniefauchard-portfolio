@@ -1,14 +1,22 @@
+// @font-face {
+//   font-family: "font-1";
+//   src: url(https://www.behance.net/gallery/32715299/Coves-Free-Font/modules/207608923);
+// }
+// @font-face {
+//   font-family: "font-2";
+//   src: url(https://www.behance.net/gallery/95687103/MADE-Gentle-Font/modules/552677225);
+// }
 @font-face {
-  font-family: "font-1";
+  font-family: "font-3";
   src: url(../assets/fonts/Questrial-Regular.ttf);
 }
 @font-face {
-  font-family: "font-2";
+  font-family: "font-4";
   src: url(../assets/fonts/Michroma-Regular.ttf);
 }
 
-$font-1: "font-1", sans-serif;
-$font-2: "font-2", serif;
+$font-1: "font-1", sans-serif, "font-3";
+$font-2: "font-2", serif, "font-4";
 
 $color-1: #fdfaff;
 $color-2:  #6f4ac3 ;

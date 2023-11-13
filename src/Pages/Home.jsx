@@ -1,15 +1,10 @@
-// import { useState } from 'react'
 import React from 'react';
-import Navigation from '../Components/Navigation';
-import SocialNetWork from '../Components/SocialNetWork';
 import DynamicText from '../Components/DynamicText';
 import Button from '../Components/Button';
 import { motion } from 'framer-motion'
-import Mouse from '../Components/Mouse';
-import Card from '../Components/Card';
+
 
 const Home = () => {  
-    // const [count, setCount] = useState(0)
     const variants = {
         initial: { 
             opacity: 0, 
@@ -29,25 +24,16 @@ const Home = () => {
 
     return (
         
-        <div>
-            <Mouse />
+        <div>           
             <motion.div className="home" initial="initial" animate="visible" exit="exit" variants={variants}>
-            <Navigation />   
-            <SocialNetWork />             
-            <div className="home-main">
-                <div className='main-content'>
-                    <h1>Mélanie</h1>
-                    <h2><DynamicText /></h2>                                   
-                </div> 
-                <Button bottom={"#projets"} />                
-            </div> 
-            <Card />                      
-            <Button right={"/About"} />            
-            {/* <div className="card">
-                <button onClick={() => setCount((count) => count + 1)}>
-                count is {count}
-                </button>        
-            </div> */}                              
+                 
+                <div className="home-main">
+                    <div className='main-content'>
+                        <h1>Mélanie</h1>
+                        <h2><DynamicText /></h2>                                                      
+                    </div>                                                 
+                </div>                                 
+                <Button right={"/About"} />                            
             </motion.div>        
                      
         </div>

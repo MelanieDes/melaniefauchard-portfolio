@@ -19,6 +19,7 @@
     "@emailjs/browser": "^3.11.0",
     "copy-to-clipboard": "^3.3.3",
     "framer-motion": "^10.16.4",
+    "heroicons": "^2.0.18",
     "javascript": "^1.0.0",
     "react": "^18.2.0",
     "react-copy-to-clipboard": "^5.1.0",

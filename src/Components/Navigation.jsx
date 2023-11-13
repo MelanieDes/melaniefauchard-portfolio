@@ -10,10 +10,7 @@ const Navigation = () => {
                 </NavLink>
                 <NavLink to="/About" className={(nav) => (nav.isActive ? "nav-active hover" : "hover" )}>
                     <li>A propos</li>
-                </NavLink>
-                {/* <NavLink to="#competences" className={(nav) => (nav.isActive ? "nav-active hover" : "hover" )}>
-                    <li>Compétences</li>
-                </NavLink> */}
+                </NavLink>                
                 <NavLink to="/Projects" className={(nav) => (nav.isActive ? "nav-active hover" : "hover" )}>
                     <li>Projets</li>
                 </NavLink>                

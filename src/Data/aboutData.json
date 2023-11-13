@@ -1,0 +1,17 @@
+[
+    {
+      "id": "0",
+      "title": "Frontend",
+      "icon": "./assets/icons/frontend.png"
+    },
+    {
+      "id": "1",
+      "title": "Backend",
+      "icon": "./assets/icons/backend.png"
+    },
+    {
+      "id": "2",
+      "title": "UI/UX Design",
+      "icon": "./assets/icons/ux.png"
+    }
+]
