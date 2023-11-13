@@ -10,7 +10,7 @@ const Card = () => {
                     {projects.map((projet) => {                    
                         return( 
                             <article className='hover' key={projet.id}>                            
-                                <Link to={`Project/${projet.id}`} style={{ textDecoration: "none" }}>
+                                <Link to={`/Project/${projet.id}`} style={{ textDecoration: "none" }}>
                                     <div className="card-content">
                                         <img className='card-img' src={projet.img} alt={projet.title} />
                                         <h3 className='card-title'>{projet.title}</h3>

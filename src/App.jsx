@@ -6,22 +6,13 @@ import About from './Pages/About';
 import { AnimatePresence } from 'framer-motion';
 import Project from './Pages/Project';
 import Projects from './Pages/Projects';
-import Mouse from './Components/Mouse';
-import Navigation from './Components/Navigation';
-import SocialNetWork from './Components/SocialNetWork';
-
-
 
 function App() {
- 
-
-  return (
-    <BrowserRouter>
-      <AnimatePresence>
-        <Mouse />
-        <Navigation />
-        <SocialNetWork />
-        <Routes>
+ return (
+    
+    <BrowserRouter>    
+      <AnimatePresence>       
+        <Routes>        
           <Route path='/' element={<Home />} />
           <Route path='/About' element={<About />} />          
           <Route path='/Projects' element={<Projects />} />
@@ -32,7 +23,7 @@ function App() {
         </Routes> 
       </AnimatePresence>         
     </BrowserRouter>
-  )
+  );
 }
 
-export default App
+export default App;

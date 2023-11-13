@@ -1,7 +1,11 @@
 import React from 'react';
 import DynamicText from '../Components/DynamicText';
 import Button from '../Components/Button';
-import { motion } from 'framer-motion'
+import { motion } from 'framer-motion';
+import Mouse from '../Components/Mouse';
+import Navigation from '../Components/Navigation';
+import SocialNetWork from '../Components/SocialNetWork';
+import Footer from '../Components/Footer';
 
 
 const Home = () => {  
@@ -24,17 +28,21 @@ const Home = () => {
 
     return (
         
-        <div>           
+        <div>  
+            <Mouse />                     
             <motion.div className="home" initial="initial" animate="visible" exit="exit" variants={variants}>
-                 
+            <Navigation />
+            <SocialNetWork />
                 <div className="home-main">
                     <div className='main-content'>
                         <h1>Mélanie</h1>
                         <h2><DynamicText /></h2>                                                      
                     </div>                                                 
                 </div>                                 
-                <Button right={"/About"} />                            
-            </motion.div>        
+                <Button right={"/About"} /> 
+                <Footer />                            
+            </motion.div> 
+                  
                      
         </div>
     );
