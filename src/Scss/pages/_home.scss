@@ -42,11 +42,13 @@
     margin: 3% 5%;
     
     @media screen and (max-width: 650px){
-      margin: 0 10%;
+      height: 100%;
+      margin: 0 2%;
     }
 
     .main-content {
       user-select: none;
+      height: 50%;
 
       h1 {
         font-size: 3.7rem;

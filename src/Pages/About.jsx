@@ -7,20 +7,22 @@ import Circle from '../Components/Circle';
 import Mouse from '../Components/Mouse';
 import Navigation from '../Components/Navigation';
 import SocialNetWork from '../Components/SocialNetWork';
+import Modal from '../Containers/Modal';
+import { Link } from 'react-router-dom';
 
 
 const About = () => {
 
     return (
         <div>
-            <Mouse />
-            <div about-container>            
-                <Navigation />
-                <SocialNetWork /> 
-                <div className="about-main">
-                    <motion.div className="about-container">
-                        <h1 className='about-main-title'>Qui suis-je ?</h1>                    
-                    </motion.div>
+            <Mouse /> 
+            <div className="about-main">
+                <motion.div className="about-container">
+                    <Navigation />
+                    <SocialNetWork />    
+                    
+                    <h1 className='about-main-title'>Qui suis-je ?</h1>                    
+                    
                     <div className="about-description">
                         <div className='about-img'>
                             <img src={avatar} alt="avatar Mélanie Fauchard" />
@@ -33,22 +35,24 @@ const About = () => {
                             </motion.p>
                         </div>                                           
                     </div> 
-                    <Circle />                 
+                    <Circle /> 
+                    <Modal title="Hello" message="tout est ok"/>                
                     <div className="about-card">
                         {aboutData.map((data) => {
                             return(
-                                <article className='card-size hover' key={data.id}>
-                                        <div className="card-content">
-                                            <img className='card-img' src={data.icon} alt={data.title} />
-                                            <h3 className='card-title'>{data.title}</h3>
-                                        </div>    
-                                </article>
+                                <Link to={`/Modal`} style={{ textDecoration: "none" }}>
+                                    <article className='card-size hover' key={data.id}>
+                                        <img className='about-card-img' src={data.icon} alt={data.title} />
+                                        <h3 className='card-title'>{data.title}</h3>
+                                    </article>
+                                </Link>
+                                
                             )
                         })}
-                    </div>                                         
-                </div>                          
-                <Button left={"/"} right={"/Projects"} /> 
-            </div>
+                    </div>                     
+                    <Button left={"/"} right={"/Projects"} /> 
+                </motion.div>
+            </div> 
         </div>
     );
 };

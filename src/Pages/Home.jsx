@@ -31,8 +31,8 @@ const Home = () => {
         <div>  
             <Mouse />                     
             <motion.div className="home" initial="initial" animate="visible" exit="exit" variants={variants}>
-            <Navigation />
-            <SocialNetWork />
+                <Navigation />
+                <SocialNetWork />
                 <div className="home-main">
                     <div className='main-content'>
                         <h1>Mélanie</h1>
@@ -41,9 +41,7 @@ const Home = () => {
                 </div>                                 
                 <Button right={"/About"} /> 
                 <Footer />                            
-            </motion.div> 
-                  
-                     
+            </motion.div>             
         </div>
     );
 };

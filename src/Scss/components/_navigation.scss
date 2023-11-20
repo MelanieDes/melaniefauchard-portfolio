@@ -6,6 +6,11 @@
   line-height: 28px;
   color: $color-4;
 
+  @media screen and (max-width: 630px){
+    top: 0.2rem;
+    font-size: 1rem;
+  }
+
   &:before {
     content: '';
     position: absolute;
@@ -27,8 +32,8 @@
       }
     }
     @media screen and (max-width: 630px){
-      height: 300px;
-      width: 300px;
+      height: 280px;
+      width: 280px;
     }
   }
   .nav-active {
