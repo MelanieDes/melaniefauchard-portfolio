@@ -1,11 +1,11 @@
-@font-face {
-  font-family: "font-1";
-  src: url(https://www.behance.net/gallery/32715299/Coves-Free-Font/modules/207608923);
-}
-@font-face {
-  font-family: "font-2";
-  src: url(https://www.behance.net/gallery/95687103/MADE-Gentle-Font/modules/552677225);
-}
+// @font-face {
+//   font-family: "font-1";
+//   src: url(https://www.behance.net/gallery/32715299/Coves-Free-Font/modules/207608923);
+// }
+// @font-face {
+//   font-family: "font-2";
+//   src: url(https://www.behance.net/gallery/95687103/MADE-Gentle-Font/modules/552677225);
+// }
 @font-face {
   font-family: "font-3";
   src: url(../assets/fonts/Questrial-Regular.ttf);
@@ -51,7 +51,7 @@ body {
   height: 100vh;
   background-color: $color-1;
   color: $black;
-  overflow: hidden;
+  // overflow: hidden;
 
   @media screen and (max-width: 430px){
     position: relative;
