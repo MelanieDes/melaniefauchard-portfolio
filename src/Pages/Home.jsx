@@ -37,10 +37,12 @@ const Home = () => {
                     <div className='main-content'>
                         <h1>Mélanie</h1>
                         <h2><DynamicText /></h2>                                                      
-                    </div>                                                 
-                </div>                                 
-                <Button right={"/About"} /> 
-                <Footer />                            
+                    </div>
+                    <div className="home-footer">
+                        <Footer />
+                    </div>
+                </div>                                                 
+                <Button right={"/About"} />                
             </motion.div>             
         </div>
     );
