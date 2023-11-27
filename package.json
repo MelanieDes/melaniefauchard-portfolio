@@ -1,6 +1,6 @@
 {
   "name": "melaniefauchard-portfolio",
-  "private": true,
+  // "private": true,
   "homepage": "https://melaniedes.github.io/melaniefauchard-portfolio",
   "version": "0.0.0",
   "type": "module",
