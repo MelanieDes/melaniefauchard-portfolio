@@ -6,7 +6,6 @@ import About from './Pages/About';
 import { AnimatePresence } from 'framer-motion';
 import Project from './Pages/Project';
 import Projects from './Pages/Projects';
-import Modal from './Containers/Modal';
 
 function App() {
  return (
@@ -16,7 +15,6 @@ function App() {
         <Routes>        
           <Route path='/' element={<Home />} />
           <Route path='/About' element={<About />} />          
-          <Route path='/Modal' element={<Modal />} />          
           <Route path='/Projects' element={<Projects />} />
           <Route path='/Project/:id' element={<Project />} />
           <Route path='/Contact' element={<Contact />} />        

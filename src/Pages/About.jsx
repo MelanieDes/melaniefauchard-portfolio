@@ -8,8 +8,8 @@ import Mouse from '../Components/Mouse';
 import Navigation from '../Components/Navigation';
 import Footer from '../Components/Footer';
 import SocialNetWork from '../Components/SocialNetWork';
-import { Link } from 'react-router-dom';
-import DropDown from '../Components/DropDown';
+// import { Link } from 'react-router-dom';
+import icons from '../Data/aboutIcon.json'
 
 
 const About = () => {
@@ -41,29 +41,34 @@ const About = () => {
                             </motion.p>
                         </div>                                           
                     </div> 
-                    <Circle />
-                    <div className="about-skills">
-                        <div class="about-collapse-container">                                                
-                            <div class="about-collapse">
-                                {aboutData.map((item) => (
-                                    <DropDown key={item.id} title={item.title} content={item.content} />
-                                ))}
-                            </div>
-                            
-                        </div>                   
-                        <div className="about-card">
+                    <Circle /> 
+                    <div className="about-card">
                             {aboutData.map((data) => {
                                 return(
-                                    <Link to={`/Modal`} style={{ textDecoration: "none" }} className='card-modal'>
+                                    // <Link to={`/Modal`} style={{ textDecoration: "none" }} className='card-modal'>
                                         <article className='card-size hover' key={data.id}>
                                             <img className='about-card-img' src={data.icon} alt={data.title} />
                                             <h3 className='card-title'>{data.title}</h3>
                                         </article>
-                                    </Link>                                
+                                    // </Link>                                
                                 )
                             })}
-                        </div>
                     </div>
+                    <div className='modal-main'>
+                    {icons.map((icon) => {
+                        return(
+                            <div className='modal-container'>
+                                <div className="modal-title hover" key={icon.id}>
+                                    <h2>{icon.title}</h2>
+                                </div>
+                                <div className="modal-img">
+                                    <img src={icon.img} alt={icon.title} />
+                                </div>
+                            </div>                    
+                )                
+            })}                              
+        </div>
+                   
                      
                     <Footer />     
                 </motion.div>
