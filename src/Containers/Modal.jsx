@@ -3,7 +3,7 @@ import icons from '../Data/aboutIcon.json'
 
 const Modal = () => {
     return(
-        <div>
+        <div className='modal-main'>
             {icons.map((icon) => {
                 return(
                     <div className='modal-container'>

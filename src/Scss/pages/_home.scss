@@ -51,6 +51,11 @@
       user-select: none;
       height: 50%;
 
+      @media screen and (max-width: 650px){
+        height: 100%;
+        margin-top: 150%;
+      }
+
       h1 {
         font-size: 3.7rem;
         position: relative;
@@ -91,11 +96,11 @@
         }
       }
       h2 {
-        font-size: 4.2rem;
+        font-size: 3.7rem;
         font-weight: 100;
 
         @media screen and (max-width: 650px){
-          font-size: 2rem;
+          font-size: 1.7rem;
         }
         @media screen and (min-width: 1200px){
           font-size: 5rem;
@@ -109,7 +114,7 @@
     margin-bottom: 30px; 
     
     @media screen and (max-width: 650px){
-      margin-top: 250px;
+      margin: 0;
     }
   }
 }

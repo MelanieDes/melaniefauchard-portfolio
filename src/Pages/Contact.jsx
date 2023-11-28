@@ -26,7 +26,10 @@ const Contact = () => {
             <Mouse />            
             <motion.div className="contact" initial="out" animate="in" exit="out" variants={pageTransition} transition={{ duration: 0.5 }}>
                 <Navigation />
-                <ContactForm />                                                 
+                <div className='contact-form'>
+                    <ContactForm /> 
+                </div>
+                                                                
                 <div className="contact-infos">
                     <div className="address">
                         <div className="content">
@@ -51,9 +54,9 @@ const Contact = () => {
                             </CopyToClipboard>
                         </div>                          
                     </div> 
-                    <SocialNetWork />                                      
-                    <Footer />
-                </div>                
+                    <SocialNetWork />
+                    <Footer />         
+                </div>               
                 <Button left={"/Projects"} />
             </motion.div>
             

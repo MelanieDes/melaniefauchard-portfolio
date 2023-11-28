@@ -1,8 +1,29 @@
-.projects-container {
-    margin-top: 25%;
+.projects-main {
+  width: 95%;
+  position: relative;
+  margin-left: 5%;
 
     @media screen and (max-width: 540px) {
-        margin-top: 40%;
+        margin-top: 2%;
+        margin-left: 0;
         
       }
+  .projects-container {
+    position: absolute;
+    @media screen and (max-width: 540px) {
+      margin-top: 40%;
+      
+    }
+    .card-main-title {
+      color: $color-3;
+      font-size: 50px;
+      font-weight: 700;
+      margin-left: 8%;
+      
+      @media screen and (max-width: 540px) {
+        font-size: 30px;
+        
+      }
+  }
+  }    
 }

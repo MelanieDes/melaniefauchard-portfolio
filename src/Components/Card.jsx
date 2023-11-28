@@ -11,9 +11,12 @@ const Card = () => {
                         return( 
                             <article className='hover' key={projet.id}>                            
                                 <Link to={`/Project/${projet.id}`} style={{ textDecoration: "none" }}>
-                                    <div className="card-content">
+                                    <div className="card-content hover">
                                         <img className='card-img' src={projet.img} alt={projet.title} />
-                                        <h3 className='card-title'>{projet.title}</h3>
+                                        <span>
+                                            <h3 className='card-title'>{projet.title}</h3>
+                                        </span>
+                                        
                                     </div>
                                 </Link>
                             </article>

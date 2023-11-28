@@ -14,15 +14,8 @@
             }
           }
 }
-.card-main-title {
-    color: $color-3;
-    font-size: 50px;
-    font-weight: 700;
-    z-index: 1;
-    margin-left: 8%;
-}
-
 .card-main {
+    width: 100%;
     display: grid;
     flex-direction: row;
     justify-items: center;
@@ -55,46 +48,68 @@ article{
     
     @media (max-width: 768px) {
         width: 100%;
-        height: 255px;
-        
-
+        height: 100%;
     } 
     .card-content{
         display: flex;
         flex-direction: column;
         position: relative;
+        overflow: hidden;
         width: 40vw;
         height: 30vw;
         z-index: 1;
         background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.3) 100%); 
                         
-        @media (max-width: 768px) {
+        @media screen and (max-width: 540px) {
             width: 100%;
-            height: 255px;
+            height: 255px;     
         }
+        &:hover span,
+        span:hover {
+            visibility: visible;
+            transform: translateY(0);
+        }       
         .card-img{
+            overflow: hidden;
             align-self: center;
             object-fit: cover;
-            min-width: 30vw;
-            height: 25vw;   
+            min-width: 25vw;
+            
             @media (max-width: 768px) {
                 width: 100%;
                 height: 255px;
             }
         }
-        .card-title{
-            color: white;
-            display: flex;
+        span {
+          position: relative;
+          margin: auto;
+          visibility: hidden; 
+          width: 100%;
+          padding: 1.5rem;
+          line-height: 34px;
+          font-size: 1.5rem;          
+          transition: 0.5s ease;
+          transform: translateY(200px);
+
+          @media screen and (max-width: 540px) {
+            visibility: hidden;            
+          }
+
+          .card-title{
             position: absolute;
-            bottom: 10px;
+            color: white;            
             flex-direction: column;
             justify-content: center;            
             padding: 0 5% 0 4%;
             font-size: 22px;
-            font-weight: 500;            
+            font-weight: 500; 
+                        
+
             @media (max-width: 768px) {
                 height: 25%;
             }
+            }
         }
+        
     }
 }

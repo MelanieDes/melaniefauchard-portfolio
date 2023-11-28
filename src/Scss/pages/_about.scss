@@ -1,86 +1,146 @@
 .about-main {  
     margin: 20% 5%;
+    position: relative;
 
     @media (max-width: 450px) {
-      margin: 1% 5%;
+      margin: 0;
+    }
+  .about-container {
+    position: absolute;
+
+    @media (max-width: 450px) {
+      margin-top: 40%;
+    }
+    .about-main-title {
+      color: $color-3;
+      font-size: 50px;
+      font-weight: 700;
+      z-index: 1;
+      margin-left: 8%;
+      @media (max-width: 450px) {
+        font-size: 35px;
+      }
+    }
+    .about-description {            
+      display: grid;
+      flex-direction: row;
+      justify-items: center;
+      grid-template-columns: 1fr 1fr;
+      margin: 5% 5%;
+  
+      @media (max-width: 450px) {
+        grid-template-columns: 1fr;
+        margin-top: 10%;
+      }
+      .about-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media (max-width: 450px) {
+          width: 45%;
+          margin: 0;
+        } 
+        img {
+          width: 100%;
+        }
+      }
+      .about-text-container {
+        @media (max-width: 450px) {
+          margin-top: 10%;
+        } 
+        .about-text {
+          width: 100%;
+          font-size: 20px;
+          display: flex;
+          justify-content: center;
+          margin: 5% auto;
+          animation-duration: 5s;
+          animation-name: slidein;
+          @media (max-width: 450px) {
+            margin-top: 10px;
+            font-size: 16px;
+          }
+        }
+        @keyframes slidein {
+          from {
+            margin-left: 100%;
+            width: 110%;
+          }
+        
+          to {
+            margin-left: 0%;
+            width: 100%;
+          }
+        }
+      }      
+    }
+  }
+  .about-skills {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .about-collapse {
+      margin-left: 100px;
+      margin-right: 100px;
+      @media (max-width: 768px) {
+        margin-left: 0;
+        margin-right: 0;           
     }
 }
-.about-main-title {
-    color: $color-3;
-    font-size: 50px;
-    font-weight: 700;
-    z-index: 1;
-    margin-left: 8%;
-}
-.about-description {
-  display: grid;
-  flex-direction: row;
-  justify-items: center;
-  grid-template-columns: 1fr 1fr;
-  margin: 5% 5%;
 
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr;
-  }
-}
-.about-text {
-  width: 100%;
-  font-size: 20px;
-  display: flex;
-  justify-content: center;
-  margin: 5% auto;
-  animation-duration: 5s;
-  animation-name: slidein;
-}
-
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 110%;
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
-.about-card {
-  display: flex;
-  flex-direction: row;
-  justify-items: center;  
-  margin: 10% auto;
-
-  @media (max-width: 768px) {
-    
-  }
-}
-.card-size {
-  display: flex;
-  position: relative;
-  width: 35vh;  
-  height: 35vh;
-  margin: auto;
-  
-
-  .about-card-img {
-      width: 50%;
+    .about-card {
       display: flex;
-      margin: auto;
-  }
-
-  .card-title {
-    color: white;
+      flex-direction: row;
+      justify-content: center;
+      justify-items: center;  
+      margin: 10% auto;
+  
+      @media (max-width: 450px) {
+        flex-direction: column;
+        
+      }
+      .card-size {
+        display: flex;
+        position: relative;
+        width: 30vh;  
+        height: 30vh;
+        margin-left: 10px;
+        margin-right: 10px;
+  
+        @media (max-width: 450px) {
+          margin: auto;
+          margin-top: 10px;
+          margin-bottom: 10px; 
+        }
+        
+        .about-card-img {
             display: flex;
-            position: absolute;
-            bottom: 10px;
-            flex-direction: column;
-            justify-content: center;            
-            padding: 0 5% 0 4%;
-            font-size: 22px;
-            font-weight: 500; 
-  }
-
+            margin: auto;
+        }    
+        .card-title {
+          color: white;
+                  display: flex;
+                  position: absolute;
+                  bottom: 10px;
+                  flex-direction: column;
+                  justify-content: center;            
+                  padding: 0 5% 0 4%;
+                  font-size: 22px;
+                  font-weight: 500; 
+        }    
+      }
+    }
+  }  
 }
+
+
+
+
+
+
+
 
  
 

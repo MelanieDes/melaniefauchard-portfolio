@@ -6,6 +6,8 @@ import Navigation from '../Components/Navigation';
 import Logo from '../Components/Logo';
 import Circle from '../Components/Circle';
 import Button from '../Components/Button';
+import Mouse from '../Components/Mouse';
+import Footer from '../Components/Footer';
 
 const Project = () => {
     
@@ -38,6 +40,7 @@ const Project = () => {
     
     return (
         <div className="project" id="projets">
+            <Mouse />
             <Navigation />
             <Logo />            
                 <motion.div className='project-main' initial="initial" animate="visible" exit="exit" variants={variants}>
@@ -66,8 +69,9 @@ const Project = () => {
                         </div>
                     </motion.div>
                     <Circle />
-                    <Button left={"/Projects"} />                 
+                    <Button left={"/Projects"} />                                                        
                 </motion.div>
+                <Footer />
                                    
         </div>
     );
