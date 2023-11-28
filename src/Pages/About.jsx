@@ -8,7 +8,6 @@ import Mouse from '../Components/Mouse';
 import Navigation from '../Components/Navigation';
 import Footer from '../Components/Footer';
 import SocialNetWork from '../Components/SocialNetWork';
-// import { Link } from 'react-router-dom';
 import icons from '../Data/aboutIcon.json'
 
 
@@ -45,31 +44,29 @@ const About = () => {
                     <div className="about-card">
                             {aboutData.map((data) => {
                                 return(
-                                    // <Link to={`/Modal`} style={{ textDecoration: "none" }} className='card-modal'>
+                                    
                                         <article className='card-size hover' key={data.id}>
                                             <img className='about-card-img' src={data.icon} alt={data.title} />
                                             <h3 className='card-title'>{data.title}</h3>
                                         </article>
-                                    // </Link>                                
+                                                                    
                                 )
                             })}
                     </div>
-                    <div className='modal-main'>
+                    <div className='skill-main'>
                     {icons.map((icon) => {
                         return(
-                            <div className='modal-container'>
-                                <div className="modal-title hover" key={icon.id}>
+                            <div className='skill-container' key={icon.id}>
+                                <div className="skill-title">
                                     <h2>{icon.title}</h2>
                                 </div>
-                                <div className="modal-img">
+                                <div className="skill-img">
                                     <img src={icon.img} alt={icon.title} />
                                 </div>
                             </div>                    
-                )                
-            })}                              
-        </div>
-                   
-                     
+                        )                
+                    })}                              
+                    </div>  
                     <Footer />     
                 </motion.div>
             </div> 
