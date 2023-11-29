@@ -41,32 +41,36 @@ const About = () => {
                         </div>                                           
                     </div> 
                     <Circle /> 
-                    <div className="about-card">
-                            {aboutData.map((data) => {
-                                return(
-                                    
-                                        <article className='card-size hover' key={data.id}>
-                                            <img className='about-card-img' src={data.icon} alt={data.title} />
-                                            <h3 className='card-title'>{data.title}</h3>
-                                        </article>
-                                                                    
-                                )
-                            })}
+                    <div className="about-skill">
+                        <h2>Mes compétences</h2>
+                        <div className="about-card">
+                                {aboutData.map((data) => {
+                                    return(
+                                        
+                                            <article className='card-size hover' key={data.id}>
+                                                <img className='about-card-img' src={data.icon} alt={data.title} />
+                                                <h3 className='card-title'>{data.title}</h3>
+                                            </article>
+                                                                        
+                                    )
+                                })}
+                        </div>
+                        <div className='skill-main'>
+                        {icons.map((icon) => {
+                            return(
+                                <div className='skill-container' key={icon.id}>
+                                    <div className="skill-title">
+                                        <h2>{icon.title}</h2>
+                                    </div>
+                                    <div className="skill-img">
+                                        <img src={icon.img} alt={icon.title} />
+                                    </div>
+                                </div>                    
+                            )                
+                        })}                              
+                        </div>
                     </div>
-                    <div className='skill-main'>
-                    {icons.map((icon) => {
-                        return(
-                            <div className='skill-container' key={icon.id}>
-                                <div className="skill-title">
-                                    <h2>{icon.title}</h2>
-                                </div>
-                                <div className="skill-img">
-                                    <img src={icon.img} alt={icon.title} />
-                                </div>
-                            </div>                    
-                        )                
-                    })}                              
-                    </div>  
+                      
                     <Footer />     
                 </motion.div>
             </div> 
