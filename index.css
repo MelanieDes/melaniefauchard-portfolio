@@ -1178,5 +1178,38 @@ article .card-content .card-title {
 .credits p {
   font-size: 0.9rem;
 }
+.about-skill {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.skill-main {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.about-skill-title {
+  text-align: center;
+  color: red;
+}
+.skill-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skill-title {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  font-size: 15px;                            
+}
+img {           
+    width: 120px;
+    height: 120px; 
+    margin-left: 10px;
+    margin-right: 10px;             
+}
 
 /*# sourceMappingURL=index.css.map */

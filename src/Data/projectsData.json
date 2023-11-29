@@ -46,8 +46,8 @@
     "date": "Octobre 2023",
     "languages": ["React", "Yarn"],
     "infos":
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
-    "img": "../assets/img/NinaCarducci.png",
+      "Publication d'une nouvelle version du site 77events et correction des différents beugs.",
+    "img": "../assets/img/77events.png",
     "link": "https://github.com/MelanieDes/77Events-Projet10"
   }
 ]

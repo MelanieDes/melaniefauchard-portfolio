@@ -1,81 +1,106 @@
 .about-main {  
-    margin: 20% 5%;
-    position: relative;
-
-    @media (max-width: 450px) {
-      margin: 0;
-    }
-  .about-container {
+    margin: 0 5%;
     
-
-    @media (max-width: 450px) {
-      margin-top: 40%;
-    }
+  .about-container { 
+    margin: 0;
+    position: absolute;      
+  
     .about-main-title {
       color: $color-3;
       font-size: 50px;
       font-weight: 700;
       z-index: 1;
       margin-left: 8%;
+      margin-top: 20%;
       @media (max-width: 450px) {
         font-size: 35px;
+        margin-top: 50%;
       }
-    }
-    .about-description {            
+    }   
+    .about-description { 
+                
       display: grid;
-      flex-direction: row;
       justify-items: center;
       grid-template-columns: 1fr 1fr;
-      margin: 5% 5%;
+      margin-top: 10%;
+      margin-bottom: 10%;
   
       @media (max-width: 450px) {
         grid-template-columns: 1fr;
-        margin-top: 10%;
-      }
-      .about-img {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        margin-top: 20%;
 
-        @media (max-width: 450px) {
-          width: 45%;
-          margin: 0;
-        } 
-        img {
-          width: 100%;
-        }
-      }
-      .about-text-container {
-        @media (max-width: 450px) {
-          margin-top: 10%;
-        } 
-        .about-text {
-          width: 100%;
-          font-size: 20px;
-          display: flex;
-          justify-content: center;
-          margin: 5% auto;
-          animation-duration: 5s;
-          animation-name: slidein;
-          @media (max-width: 450px) {
-            margin-top: 10px;
-            font-size: 16px;
-          }
-        }
-        @keyframes slidein {
-          from {
-            margin-left: 100%;
-            width: 110%;
-          }
+        .about-img-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+    
+            @media (max-width: 450px) {
+              width: 45%;
+              margin: 0;
+            }
+            .left {
         
-          to {
-            margin-left: 0%;
+              @media (max-width: 450px) {
+                top: 50%; 
+                left: -100px;               
+              }
+            }
+            .right {
+        
+              @media (max-width: 450px) {
+                top: 50%; 
+                right: -100px;               
+              }
+            }  
+            img {
+              width: 100%;
+            }          
+        }
+        
+        .about-text-container {
+          @media (max-width: 450px) {
+            margin-top: 10%;
+          } 
+          .about-text {
             width: 100%;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            margin: 5% auto;
+            animation-duration: 5s;
+            animation-name: slidein;
+            @media (max-width: 450px) {
+              margin-top: 10px;
+              font-size: 16px;
+            }
+          }
+          @keyframes slidein {
+            from {
+              margin-left: 100%;
+              width: 110%;
+            }
+          
+            to {
+              margin-left: 0%;
+              width: 100%;
+            }
           }
         }
-      }      
+      }           
     }
   }
+.about-skill {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+    
+  .about-skill-title {
+    text-align: center;
+    color: $color-3;
+    font-size: 30px;
+    font-weight: 500;
+    }
   .about-card {
       display: flex;
       flex-direction: row;
@@ -104,6 +129,9 @@
         .about-card-img {
             display: flex;
             margin: auto;
+            width: 20vh;  
+            height: 20vh;
+            
         }    
         .card-title {
           color: white;
@@ -118,32 +146,46 @@
         }    
       }
     }
-    .skill-main {
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      margin-bottom: 50px;
-  
-      .skill-container {
-          display: flex;
-          flex-direction: column;
-          align-items: center;          
-  
-          .skill-title {
+    
+
+      .skill-main {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 50px;
+        
+        @media (max-width: 450px) {
+          display: grid;
+          justify-items: center;
+          grid-template-columns: 1fr 1fr;
+        }        
+    
+        .skill-container {
             display: flex;
-            flex-direction: row;
-            text-align: center;
-            font-size: 15px;                            
-          }
-          img {           
-              width: 120px;
-              height: 120px; 
-              margin-left: 10px;
-              margin-right: 10px;             
-          }
-      }
-  }
+            flex-direction: column;
+            align-items: center;
+            
+            @media (max-width: 450px) {
+              margin-top: 10%;
+            }
+    
+            .skill-title {
+              display: flex;
+              flex-direction: row;
+              text-align: center;
+              font-size: 15px;                            
+            }
+            img {           
+                width: 120px;
+                height: 120px; 
+                margin-left: 10px;
+                margin-right: 10px;             
+            }
+        }
+    }
+    }
+    
   }  
 
 
