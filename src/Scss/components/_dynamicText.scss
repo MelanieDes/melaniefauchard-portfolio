@@ -16,7 +16,8 @@
 
     @media (max-width: 450px) {
       width: 180px;
-      transform: translateX(16px);      
+      perspective: none;
+      transform: translateX(26px);      
     }
   }
   .word {
