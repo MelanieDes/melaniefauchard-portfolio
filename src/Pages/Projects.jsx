@@ -11,8 +11,8 @@ const Projects = () => {
         <div className='projects'>  
             <Mouse />                                               
             <div className='projects-main'>
-                <Navigation />
-                <SocialNetWork />                               
+            <Navigation />
+            <SocialNetWork />                               
                 <div className="projects-container">
                     <h2 className='card-main-title'>Mes projets</h2>
                     <Card />
