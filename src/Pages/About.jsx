@@ -35,10 +35,10 @@ const About = () => {
                             <motion.p className="about-text">
                             Je suis Mélanie Fauchard.<br></br> Je suis intégratrice web et j'habite dans une petite commune de la Sarthe.</motion.p>
                             <motion.p className="about-text">
-                            J'ai découvert les métiers du web lors d'une formation en tant que dessinateur du bâtiment. J'ai trouvé un grand intérêt envers ces métiers. Je me suis renseignée sur les formations possibles et j'ai intégré une formation en présentiel "Bachelor Concepteur Réalisateur web et Digital", que j'ai obtenue.<br></br>Ensuite j'ai travaillé dans une petite entreprise de revente de meubles en déstockage ou je m'occupais du site vitrine mais je me suis rendu à l'évidence qu'il me maquait quelques bases. Donc suite à une démission pour raison personnelle, je me suis inscrite à la formation d'intégrateur web chez OpenClassRooms.
+                            J'ai découvert les métiers du web lors d'une formation en tant que dessinateur du bâtiment. J'ai trouvé un grand intérêt envers ces métiers. Je me suis renseignée sur les formations possibles et j'ai intégré une formation en présentiel "Bachelor Concepteur Réalisateur web et Digital", que j'ai obtenue.
                             </motion.p>
                             <motion.p className="about-text">
-                            Ensuite j'ai travaillé dans une petite entreprise de revente de meubles déstocké où je m'occupais du site e-commerce. Je me suis rendu à l'évidence qu'il me manquait quelques bases. Donc suite à une démission pour raison personnelle, je me suis inscrite à la formation d'intégrateur web chez OpenClassRooms.
+                            J'ai trouvé un poste dans une petite entreprise de revente de meubles en destockage, où je m'occupais du site e-commerce. Je me suis rendu à l'évidence qu'il me manquait quelques bases. Donc suite à une démission pour raison personnelle, je me suis inscrite à la formation d'intégrateur web chez OpenClassRooms.
                             </motion.p>
                         </div>                                           
                     </div> 

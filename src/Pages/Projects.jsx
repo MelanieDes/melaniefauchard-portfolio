@@ -9,10 +9,10 @@ import SocialNetWork from '../Components/SocialNetWork';
 const Projects = () => {
     return (
         <div className='projects'>  
-            <Mouse /> 
-            <Navigation />
-            <SocialNetWork />                                  
-            <div className='projects-main'>                               
+            <Mouse />                                               
+            <div className='projects-main'>
+                <Navigation />
+                <SocialNetWork />                               
                 <div className="projects-container">
                     <h2 className='card-main-title'>Mes projets</h2>
                     <Card />
