@@ -52,10 +52,11 @@ const Contact = () => {
                             <CopyToClipboard text="melaniefauchard0@gmail.com" className="hover">
                                 <p style={{ cursor: "pointer" }} className='clipboard' onClick={() => alert("Email copié !")} >melaniefauchard0@gmail.com</p>
                             </CopyToClipboard>
-                        </div>                          
+                        </div>
+                        <Footer />                          
                     </div> 
                     <SocialNetWork />
-                    <Footer />         
+                             
                 </div>               
                 <Button left={"/Projects"} />
             </motion.div>

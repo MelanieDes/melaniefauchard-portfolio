@@ -91,7 +91,8 @@ article{
           transform: translateY(200px);
 
           @media screen and (max-width: 540px) {
-            visibility: hidden;            
+            visibility: visible; 
+            transform: translateY(0);           
           }
 
           .card-title{
@@ -107,6 +108,8 @@ article{
 
             @media (max-width: 768px) {
                 height: 25%;
+                font-size: 16px;
+                
             }
             }
         }
