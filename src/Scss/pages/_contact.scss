@@ -3,6 +3,10 @@
   width: 100vw;
   height: 100vh;
 
+  @media screen and (max-width: 430px) {
+    height: 110vh;
+  }
+
   &:after {
     content: "";
     height: 700px;
@@ -51,7 +55,7 @@
     max-width: 300px;
 
     @media screen and (max-width: 740px) {
-      margin: 10rem 0 0 30%;
+      margin: 10rem 0 0 0%;
     }
     @media screen and (max-width: 440px) {
       margin-left: 3.5rem;
@@ -165,6 +169,7 @@
     }
     @media screen and (max-height: 500px) {
       display: none;
+      margin-top: 20px;
     }
     @media screen and (min-width: 1200px) {
       width: 35%;
@@ -269,6 +274,12 @@
     
     @media screen and (max-width: 650px){
       margin: 0;
+      position: relative;
+      left: -100px;
+      top: 100%;
+    }
+    p {
+      font-size: medium;
     }
   } 
 }

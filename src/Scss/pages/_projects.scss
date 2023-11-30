@@ -1,29 +1,41 @@
-.projects-main {
-  width: 95%;
-  position: relative;
-  margin-left: 5%;
-
-    @media screen and (max-width: 540px) {
-        margin-top: 2%;
-        margin-left: 0;
+.projects {
+  margin: 0;
+  .projects-main {
+    position: absolute; 
+  
+      @media screen and (max-width: 540px) {
+        margin: 0;
+                
+        }
+    .projects-container {
+      margin: 20% 5%;
+      @media screen and (max-width: 540px) {       
+        margin: 40% 8% 0 0;
+        
         
       }
-  .projects-container {
-    position: absolute;
-    @media screen and (max-width: 540px) {
-      margin-top: 40%;
+      .card-main-title {
+        color: $color-3;
+        font-size: 50px;
+        font-weight: 700;
+        margin-left: 8%;
+        
+        @media screen and (max-width: 540px) {
+          font-size: 30px;
+          
+        }
+    }
+    article {
+      @media screen and (max-width: 540px) {
+        width: 85%;
+      }
+      span {
+        @media screen and (max-width: 540px) {
+          bottom: 10%;
+        }
+      }
       
     }
-    .card-main-title {
-      color: $color-3;
-      font-size: 50px;
-      font-weight: 700;
-      margin-left: 8%;
-      
-      @media screen and (max-width: 540px) {
-        font-size: 30px;
-        
-      }
+    }    
   }
-  }    
 }

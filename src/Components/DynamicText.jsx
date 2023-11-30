@@ -14,7 +14,7 @@ const DynamicText = () => {
 
             letter.classList.add("letter");
             letter.style.opacity = "0";
-            letter.style.animation = "anim 6s ease forwards";
+            letter.style.animation = "anim 7s ease forwards";
             letter.textContent = array[wordIndex][letterIndex];
 
             setTimeout(() => {
@@ -35,7 +35,7 @@ const DynamicText = () => {
                 } else {
                     letterIndex = 0;
                     wordIndex++;
-                    setTimeout(loop, 2000);                    
+                    setTimeout(loop, 3000);                    
                 }
                 
             }, 80)

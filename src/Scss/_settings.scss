@@ -1,14 +1,8 @@
-@font-face {
-  font-family: "font-1";
-  src: url(../assets/fonts/Questrial-Regular.ttf);
-}
-@font-face {
-  font-family: "font-2";
-  src: url(../assets/fonts/Michroma-Regular.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&family=Roboto:wght@100;400;700&display=swap');
 
-$font-1: "font-1", sans-serif;
-$font-2: "font-2", serif;
+$font-1: "Roboto", sans-serif;
+$font-2: "Oswald", serif;
 
 $color-1: #fdfaff;
 $color-2:  #6f4ac3 ;
@@ -68,4 +62,7 @@ main {
     letter-spacing: 1px;
     color: $color-2;
   }
+}
+h1 {
+  font-family: $font-2;
 }
