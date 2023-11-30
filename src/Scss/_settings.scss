@@ -1,10 +1,12 @@
 @font-face {
   font-family: "font-1";
   src: url(../assets/fonts/Questrial-Regular.ttf);
+  font-display: swap;
 }
 @font-face {
   font-family: "font-2";
   src: url(../assets/fonts/Michroma-Regular.ttf);
+  font-display: swap;
 }
 
 $font-1: "font-1", sans-serif;
